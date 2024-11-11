@@ -1,0 +1,228 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(250, 250, 250);
+}
+
+header {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding-left: 25px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+header div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 25%;
+  padding-left: 20px;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+#active {
+  text-decoration: underline rgba(255, 255, 255, 0.9);
+  text-underline-offset: 3px;
+  color: white;
+  cursor: default;
+}
+
+header h1 {
+  font-weight: 400;
+}
+
+header a:hover {
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+header img {
+  height: 25px;
+  width: 25px;
+}
+
+header .logo {
+  height: 150px;
+  width: 175px;
+  margin: 20px 0 20px 20px;
+}
+
+header img:hover {
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 200px;
+}
+
+.main .logo-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.main h1 {
+  font-size: 2.75rem;
+  font-weight: 400;
+}
+
+.first {
+  height: 700px;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first div {
+  background-color: white;
+  box-shadow: 5px 5px 10px rgba(77, 77, 77, 0.25);
+  padding: 0 10px 0 20px;
+  animation: fade-in 1000ms ease-out;
+}
+
+.first img {
+  height: 400px;
+  width: 600px;
+  margin-left: 100px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  animation: fade-in 1000ms ease-out;
+}
+
+.first p {
+  line-height: 30px;
+}
+
+@keyframes fade-in {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.booking {
+  background-color: black;
+  width: 75%;
+  box-sizing: border-box;
+  height: 100px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.booking h1 {
+  font-size: 2.2rem;
+}
+
+.second {
+  height: 550px;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.second div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.second img {
+  height: 300px;
+  width: 400px;
+  transition-duration: 400ms;
+}
+
+.second img:hover {
+  transform: scale(1.1);
+}
+
+.third {
+  height: 350px;
+  width: 95%;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+
+.third .l-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.third h1 {
+  margin: 0 0 25px 0;
+}
+
+.third h2 {
+  text-decoration: underline 3px white;
+  text-underline-offset: 3px;
+}
+
+.third button {
+  width: 300px;
+  height: 45px;
+  background-color: rgb(180, 180, 180);
+  color: white;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+footer {
+  height: 375px;
+  padding: 0 125px;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer div {
+  width: 300px;
+}
+
+footer h2,
+footer h3 {
+  font-weight: 500;
+}
